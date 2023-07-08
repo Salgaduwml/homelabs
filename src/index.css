@@ -5,8 +5,9 @@
   --blue-gradient: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
   --orange-gradient: linear-gradient(270deg, #ffb978 0%, #ff922d 100%);
   --blue: #4066ff;
+  --pink: #ff4449;
   --lightBlue: #eeeeff;
-  --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
+  --shadow: 0px 23px 21px -8px #eeeeff;
 }
 
 * {
@@ -16,10 +17,42 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 76px;
+}
+
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  color: #333;
+  line-height: 52px;
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
+
+.button {
+  font-weight: 500;
+  background: var(--blue);
+  padding: 0.6rem 1.4rem;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: all 300ms ease;
+}
+
+.button:hover {
+  cursor: pointer;
+  scale: 1.05;
+}
+
 .paddings {
   padding: 1.5rem;
 }
@@ -67,8 +100,8 @@ a {
 }
 
 .primaryText {
-  color: #1f3e72;
-  font-weight: bold;
+  color: #333;
+  font-weight: 500;
   font-size: 2rem;
 }
 
@@ -76,10 +109,23 @@ a {
   color: rgb(140 139 139);
   font-size: 0.9rem;
 }
-.orangeText {
-  color: orange;
+.blueText {
+  color: var(--blue);
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
+}
+
+.image-container {
+  width: 32rem;
+  height: 40rem;
+  border-radius: 16rem 16rem 0 0;
+  overflow: hidden;
+}
+
+.image-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* media queries */
@@ -103,10 +149,22 @@ a {
 }
 
 @media (max-width: 640px) {
+  h1 {
+    font-size: 48px;
+    line-height: 50px;
+  }
+  h2 {
+    font-size: 32px;
+    line-height: 34px;
+  }
   .primaryText {
     font-size: 1.5rem;
   }
-  .orangeText {
+  .blueText {
     font-size: 1.2rem;
+  }
+  .image-container {
+    width: 100%;
+    height: 24rem;
   }
 }

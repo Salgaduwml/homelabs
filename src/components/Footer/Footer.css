@@ -1,0 +1,24 @@
+.f-container {
+  justify-content: space-between;
+  align-items: start;
+}
+
+.f-left {
+  gap: 1rem;
+}
+
+.f-container h3 {
+  font-size: 1.2rem;
+}
+
+.f-middle {
+  gap: 0.5rem;
+}
+
+.f-middle p {
+  font-size: 1rem;
+}
+
+.f-right {
+  gap: 0.5rem;
+}

@@ -1,0 +1,55 @@
+.v-wrapper {
+  padding: 60px 0;
+}
+
+.v-container > div {
+  flex: 1;
+}
+
+.v-right {
+  gap: 0.5rem;
+}
+
+.accordian {
+  margin-top: 2rem;
+  border: none;
+}
+
+.accordianItem {
+  background: white;
+  border: 0.8px solid var(--lightBlue);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.accordianItem.expanded {
+  box-shadow: var(--shadow);
+}
+
+.accordianButton {
+  width: 100%;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.icon {
+  padding: 10px;
+  background: var(--lightBlue);
+  color: var(--blue);
+  border-radius: 4px;
+}
+
+.accordianButton .primaryText {
+  font-size: 1.1rem;
+}
+
+.accordianButton > :nth-child(3) {
+  margin-left: auto;
+}
+
+@media (max-width: 640px) {
+  .v-container {
+    flex-direction: column;
+  }
+}
